@@ -56,4 +56,3 @@ yarn deploy
 ```
 
 - [Clasp doc](https://github.com/google/clasp/blob/master/docs/run.md)  
-- [参考記事](https://qiita.com/jiroshin/items/dcc398285c652554e66a#%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%AB%E3%81%8B%E3%82%89gas%E3%82%92%E5%8F%A9%E3%81%8F)
