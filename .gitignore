@@ -1,4 +1,7 @@
 node_modules
 dist/*.js
 *.log
+
+# secret files
 creds.json
+.clasprc.json
