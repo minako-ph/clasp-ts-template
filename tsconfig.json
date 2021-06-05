@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "es5",
+      "es6",
+      "es7",
+    ],
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "module": "esnext",
+    "downlevelIteration": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node"
+  },
+  "include": ["./src/**/*"]
+}

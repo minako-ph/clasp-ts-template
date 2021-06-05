@@ -1,0 +1,22 @@
+{
+  "name": "clasp-ts-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "deploy": "yarn build && clasp push",
+    "open": "clasp open"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-typescript": "^7.13.0",
+    "@google/clasp": "^2.3.2",
+    "@types/google-apps-script": "^1.0.33",
+    "babel-loader": "^8.2.2",
+    "gas-webpack-plugin": "^2.0.1",
+    "typescript": "^4.3.2",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0"
+  }
+}
