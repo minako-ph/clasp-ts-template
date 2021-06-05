@@ -46,9 +46,9 @@ yarn deploy
 
 
 - Set up a Project ID.
-- Create an OAuth Client ID (Other). Download as creds.json.
+- Create an OAuth Client ID (Other). Download as `creds.json`.
 - `clasp login --creds creds.json` with this downloaded file. 
-- Add the following to appsscript.json:
+- Add the following to `appsscript.json`:
 ```
 "executionApi": {
   "access": "ANYONE"
