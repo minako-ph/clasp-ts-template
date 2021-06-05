@@ -55,4 +55,4 @@ yarn deploy
 }
 ```
 
-- [Clasp doc](https://github.com/google/clasp/blob/master/docs/run.md)  
+- [clasp doc](https://github.com/google/clasp/blob/master/docs/run.md)  

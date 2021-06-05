@@ -6,6 +6,8 @@
   "scripts": {
     "build": "webpack",
     "deploy": "yarn build && clasp push",
+    "run:main": "yarn deploy && clasp run main && clasp logs",
+    "logs": "clasp logs",
     "open": "clasp open"
   },
   "devDependencies": {
