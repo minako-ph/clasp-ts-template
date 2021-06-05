@@ -3,6 +3,7 @@
 install packages
 ```bash
 yarn install
+typesync
 ```
 
 login to clasp
