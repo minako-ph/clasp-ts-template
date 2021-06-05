@@ -45,8 +45,8 @@ yarn deploy
 # Run script from local machine
 
 
-- Set up a Project ID.
-- Create an OAuth Client ID (Other). Download as `creds.json`.
+- Set up a **Project ID**.
+- Create an **OAuth Client ID** (Other). Download as `creds.json`.
 - `clasp login --creds creds.json` with this downloaded file. 
 - Add the following to `appsscript.json`:
 ```
@@ -56,3 +56,8 @@ yarn deploy
 ```
 
 - [clasp doc](https://github.com/google/clasp/blob/master/docs/run.md)  
+
+run
+```bash
+yarn run:main
+```
