@@ -1,5 +1,5 @@
 export const setTrigger = () => {
-  let nextDt = new Date()
+  const nextDt = new Date()
   nextDt.setDate(nextDt.getDate() + 1)
   nextDt.setHours(10)
   nextDt.setMinutes(0)
