@@ -49,6 +49,7 @@ yarn deploy
 
 # Run a script from the local machine
 
+Prerequisites from [clasp doc](https://github.com/google/clasp/blob/master/docs/run.md)  
 
 - Set up a **Project ID**.
 - Create an **OAuth Client ID** (Other). Download as `creds.json`.
