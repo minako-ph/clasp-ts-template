@@ -1,5 +1,10 @@
 # Usage
 
+```
+git clone https://github.com/minako-ph/clasp-ts-template 
+cd clasp-ts-template
+```
+
 install packages
 ```bash
 yarn install
