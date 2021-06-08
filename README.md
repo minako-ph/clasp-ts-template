@@ -19,12 +19,12 @@ update `.clasp.json`
 }
 ```
 
-or you can create new one
+or you can create a new project
 ```bash
 yarn clasp create
 ```
 
-deploy as test
+deploy
 ```bash
 yarn deploy
 ```
@@ -42,7 +42,7 @@ yarn deploy
  sheet.getSheetByName('name').getRange(2,3).setValue('value');
 ```
 
-# Run script from local machine
+# Run a script from the local machine
 
 
 - Set up a **Project ID**.
