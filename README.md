@@ -24,7 +24,7 @@ update `.clasp.json`
 }
 ```
 
-or you can also create a new project
+~or you can also create a new project~ 新規作成の手順書き直します
 ```bash
 yarn clasp create
 ```
