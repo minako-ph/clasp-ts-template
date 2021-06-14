@@ -1,5 +1,10 @@
 # Usage
 
+```
+git clone https://github.com/minako-ph/clasp-ts-template 
+cd clasp-ts-template
+```
+
 install packages
 ```bash
 yarn install
@@ -31,7 +36,7 @@ yarn deploy
 
 よく使うgasのメソッド
 ```js
- // 環境変数の取得
+ //変数の取得
  const prop = PropertiesService.getScriptProperties().getProperties()
  const token = prop.TOKEN
 
