@@ -8,7 +8,7 @@ cd clasp-ts-template
 install packages
 ```bash
 yarn install
-typesync
+yarn typesync
 ```
 
 login to clasp
