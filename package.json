@@ -7,7 +7,7 @@
     "build": "webpack",
     "push": "yarn build && clasp push",
     "run:main": "yarn push && clasp run main && clasp logs",
-    "deploy:api": "bash bin/deploy.sh",
+    "deploy": "bash bin/deploy.sh",
     "logs": "clasp logs",
     "open": "clasp open"
   },
