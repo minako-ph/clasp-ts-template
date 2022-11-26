@@ -8,7 +8,7 @@ cd clasp-ts-template
 install packages
 ```bash
 yarn install
-typesync
+yarn typesync
 ```
 
 login to clasp
@@ -29,41 +29,32 @@ add the following to .clasp.json:
 }
 ```
 
-deploy
+push
 ```bash
-yarn deploy
+yarn push
 ```
 
-よく使うgasのメソッド
-```js
- //変数の取得
- const prop = PropertiesService.getScriptProperties().getProperties()
- const token = prop.TOKEN
+## ローカルマシーンからスクリプトを実行する
 
- // シートの取得など
- const sheet = SpreadsheetApp.openById('id');
- sheet.getSheetByName('name')
- sheet.getSheetByName('name').getRange(2,3).getValue(); // getRange(縦, 横)
- sheet.getSheetByName('name').getRange(2,3).setValue('value');
-```
-
-# Run a script from the local machine
-
-- GCP上でプロジェクトの作成
+1. GCP上でプロジェクトの作成
   - プロジェクト番号とプロジェクトIDをメモしておく
-- プロジェクトIDを登録する
+  - プロジェクトIDを登録する
 ```bash
 yarn clasp setting projectId ${プロジェクトID}
 ```
-- 下記のリンクにアクセスしてOAuth同意画面を作成する
+
+2. 下記のリンクにアクセスしてOAuth同意画面を作成する
   - https://console.developers.google.com/apis/credentials/consent?project={プロジェクトID}
   - テスターに自分のアカウントを追加すると良い
-- 以下のコマンドでGASプロジェクトを開く
+
+3. 以下のコマンドでGASプロジェクトを開く
 ```bash
 yarn clasp open
 ```
 - `リソース` から `Cloud Platform プロジェクト` を開きプロジェクト番号の登録をする
-- 以下のコマンドで認証情報作成画面を開く
+
+
+4. 以下のコマンドで認証情報作成画面を開く
 ```bash
 yarn clasp open --creds
 ```
@@ -74,8 +65,9 @@ yarn clasp open --creds
 ```bash
 yarn clasp login --creds creds.json
 ```
-- `appsscript.json` に以下の記載を追加する
-```
+
+5. `appsscript.json` に以下の記載を追加する
+```json
 "executionApi": {
   "access": "ANYONE"
 }
@@ -87,4 +79,44 @@ yarn run:main
 ```
 
 **参考**
-- [clasp doc](https://github.com/google/clasp/blob/master/docs/run.md)  
+- [clasp doc](https://github.com/google/clasp/blob/master/docs/run.md)
+
+## ローカルマシーンから実行可能API もしくは 公開ウェブアプリのURLを固定したままデプロイをする
+
+1. `ローカルマシーンからスクリプトを実行する` の 1から4までの手順を完了させる
+
+2. `appsscript.json` に以下の記載を追加する
+```
+  "executionApi": {
+    "access": "ANYONE"
+  },
+  "webapp": {
+    "access": "ANYONE_ANONYMOUS",
+    "executeAs": "USER_DEPLOYING"
+  }
+```
+
+3. 以下のコマンドでGASプロジェクトを開く
+```bash
+yarn clasp open
+```
+- 一度アプリケーションを手動でデプロイする
+
+4. ローカルからデプロイ
+```bash
+yarn deploy
+```
+
+
+## よく使うgasのメソッド
+```js
+ //変数の取得
+ const prop = PropertiesService.getScriptProperties().getProperties()
+ const token = prop.TOKEN
+
+ // シートの取得など
+ const sheet = SpreadsheetApp.openById('id');
+ sheet.getSheetByName('name')
+ sheet.getSheetByName('name').getRange(2,3).getValue(); // getRange(縦, 横)
+ sheet.getSheetByName('name').getRange(2,3).setValue('value');
+```
