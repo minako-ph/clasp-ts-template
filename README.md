@@ -73,7 +73,7 @@ yarn clasp login --creds creds.json
 }
 ```
 
-実行
+6. ローカルから実行
 ```bash
 yarn run:main
 ```
