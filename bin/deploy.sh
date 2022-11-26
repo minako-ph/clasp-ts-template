@@ -1,4 +1,4 @@
-yarn deploy
+yarn push
 
 # get last deployment id
 LAST_DEPLOYMENT_ID=$( yarn clasp deployments | pcregrep -o1 '\- ([A-Za-z0-9\-\_]+) @\d+ - web app meta-version' )
