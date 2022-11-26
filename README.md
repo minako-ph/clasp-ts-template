@@ -29,6 +29,10 @@ add the following to .clasp.json:
 }
 ```
 
+- `yarn clasp login`したアカウントで以下のURLにアクセスし `Google Apps Script API` をONにする  
+
+https://script.google.com/home/usersettings
+
 push
 ```bash
 yarn push
