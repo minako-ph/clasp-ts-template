@@ -5,23 +5,25 @@ git clone https://github.com/minako-ph/clasp-ts-template
 cd clasp-ts-template
 ```
 
-install packages
+1. install packages
 ```bash
-yarn install
 yarn typesync
+yarn install
 ```
 
-login to clasp
+2. login to clasp
 ```bash
 yarn clasp login
 ```
 
-create a new project
+3. create a new project
 ```bash
 yarn clasp create
 ```
+4. root directoryに作成された `appscript.json`を削除
 
-add the following to .clasp.json:
+
+5. add the following to .clasp.json:
 ```
 {
   "scriptId":"xxxxxxxxxxxxx",
@@ -29,11 +31,11 @@ add the following to .clasp.json:
 }
 ```
 
-- `yarn clasp login`したアカウントで以下のURLにアクセスし `Google Apps Script API` をONにする  
+6. `yarn clasp login`したアカウントで以下のURLにアクセスし `Google Apps Script API` をONにする  
 
 https://script.google.com/home/usersettings
 
-push
+7. push
 ```bash
 yarn push
 ```
