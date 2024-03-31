@@ -1,28 +1,31 @@
 # Usage
 
-```
-git clone https://github.com/minako-ph/clasp-ts-template 
+1. Fork this repository by clicking the "Fork" button on the top right corner of this page.
+
+2. Clone your forked repository to your local machine:
+```bash
+git clone https://github.com/YourUsername/clasp-ts-template
 cd clasp-ts-template
 ```
 
-1. install packages
+3. install packages
 ```bash
 yarn install
 ```
 
-2. login to clasp
+4. login to clasp
 ```bash
 yarn clasp login
 ```
 
-3. create a new project
+5. create a new project
 ```bash
 yarn clasp create
 ```
-4. root directoryに作成された `appscript.json`を削除
+6. root directoryに作成された `appscript.json`を削除
 
 
-5. add the following to .clasp.json:
+7. add the following to .clasp.json:
 ```
 {
   "scriptId":"xxxxxxxxxxxxx",
@@ -30,11 +33,11 @@ yarn clasp create
 }
 ```
 
-6. `yarn clasp login`したアカウントで以下のURLにアクセスし `Google Apps Script API` をONにする  
+8. `yarn clasp login`したアカウントで以下のURLにアクセスし `Google Apps Script API` をONにする  
 
 https://script.google.com/home/usersettings
 
-7. push
+9. push
 ```bash
 yarn push
 ```
