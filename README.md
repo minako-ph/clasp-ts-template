@@ -13,29 +13,29 @@ cd clasp-ts-template
 yarn install
 ```
 
-4. login to clasp
+4. 以下のURLにアクセスし `Google Apps Script API` をONにする  
+
+https://script.google.com/home/usersettings
+
+5. login to clasp
 ```bash
 yarn clasp login
 ```
 
-5. create a new project
+6. create a new project
 ```bash
 yarn clasp create
 ```
-6. root directoryに作成された `appscript.json`を削除
+7. root directoryに作成された `appscript.json`を削除
 
 
-7. add the following to .clasp.json:
+8. add the following to .clasp.json:
 ```
 {
   "scriptId":"xxxxxxxxxxxxx",
   "rootDir": "./dist" // !! Add this line !!
 }
 ```
-
-8. `yarn clasp login`したアカウントで以下のURLにアクセスし `Google Apps Script API` をONにする  
-
-https://script.google.com/home/usersettings
 
 9. push
 ```bash
